@@ -1,0 +1,211 @@
+%FDF-1.2
+%‚„œ”
+1 0 obj 
+<<
+/FDF 
+<<
+/Fields [
+<<
+/Kids [
+<<
+/Kids [
+<<
+/V ()
+/T (apt_number[0])
+>> 
+<<
+/V ()
+/T (last_address[0])
+>> 
+<<
+/V ()
+/T (sig2[0])
+>> 
+<<
+/V ()
+/T (Line1_FamilyName[0])
+>> 
+
+<<
+/V (CA)
+/T (Line3_State[0])
+>> 
+<<
+/V (Saratoga)
+/T (Line3_CityOrTown[0])
+>> 
+<<
+/V /
+/T (Gender[0])
+>> 
+<<
+/V (F)
+/T (/Gender[1])
+>> 
+
+<<
+/V (12085 Ingrid Ct)
+/T (Line3_StreetNumberName[0])
+>> 
+<<
+/V (H4 Visa holder)
+/T (manner[0])
+>> 
+<<
+/V /
+/T (Line11[1])
+>> 
+<<
+/V ()
+/T (section_1[1])
+>> 
+<<
+/V /
+/T (applying[2])
+>> 
+<<
+/V ()
+/T (signature[0])
+>> 
+<<
+/V /
+/T (Line8_Marital[1])
+>> 
+<<
+/V (03/04/1993)
+/T (Date_of_Birth[0])
+>> 
+<<
+/V ()
+/T (section_1[3])
+>> 
+<<
+/V (Student)
+/T (status[0])
+>> 
+<<
+/Kids [
+<<
+/V (a)
+/T (section_3[0])
+>> 
+<<
+/V (8)
+/T (section_1[0])
+>> 
+<<
+/V ()
+/T (section_2[0])
+>>]
+/T (#area[1])
+>> 
+<<
+/V ()
+/T (other_names[0])
+>> 
+<<
+/V /
+/T (applying[0])
+>> 
+<<
+/V /
+/T (Line8_Marital[3])
+>> 
+<<
+/V (12345678901)
+/T (alien_re_number[0])
+>> 
+<<
+/V (650-460-9342)
+/T (telephone4[0])
+>> 
+<<
+/V ()
+/T (ssn_s[0])
+>> 
+<<
+/V ()
+/T (last_date2[0])
+>> 
+<<
+/V (San Francisco, California)
+/T (place_entry[0])
+>> 
+<<
+/V /N
+/T (Line11[0])
+>> 
+<<
+/V (03/01/2015)
+/T (Date_of_last_entry[0])
+>> 
+<<
+/V /M
+/T (Line8_Marital[0])
+>> 
+
+<<
+/Kids [
+<<
+/V ()
+/T (results[0])
+>> 
+<<
+/V ()
+/T (ins_office[0])
+>> 
+<<
+/V ()
+/T (Date[0])
+>>]
+/T (#area[0])
+>> 
+<<
+/V (None)
+/T (section_1[2])
+>> 
+<<
+/V /
+/T (applying[1])
+>> 
+<<
+/V /
+/T (Line8_Marital[2])
+>> 
+<<
+/V (10/22/2016)
+/T (last_date[0])
+>> 
+<<
+/V (Applicant for Adjustment of Status)
+/T (section_1[4])
+>> 
+<<
+/V (95070)
+/T (Line3_ZipCode[0])
+>> 
+<<
+/V ()
+/T (print_name[0])
+>> 
+<<
+/V ()
+/T (county_of_citizenship[0])
+>> 
+<<
+/V (Taipei, Taiwan)
+/T (place_of_birth[0])
+>>]
+/T (#subform[0])
+>>]
+/T (form1[0])
+>>]
+>>
+>>
+endobj 
+trailer
+
+<<
+/Root 1 0 R
+>>
+%%EOF

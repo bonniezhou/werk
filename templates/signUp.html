@@ -1,23 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>H4Werk</title>
+	<title>H4Werk | Sign Up</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
 </head>
 <body>
-	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confirm-submit">Apply Now</button>
-
-	<div class="modal fade bd-example-modal-lg" id="confirm-submit" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-	  <div class="modal-dialog modal-lg">
-	    <div class="modal-content">
-	      Make sure you have the requirements to move forward: ...
-	    </div>
-	    <div class="modal-footer">
-            <a href="/signUp" id="submit" class="btn btn-success success">Continue</a>
-        </div>
-    </div>
-	  </div>
-	</div>
+	Please sign up for an account
+	<form action="/form" id="signUp" method="POST">
+		Email: <input type="text" name="email"><br>
+		Password: <input type="text" name="password"><br>
+	</form>
+	<button type="submit" form="signUp">Submit</button>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
