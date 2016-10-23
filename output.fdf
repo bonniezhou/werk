@@ -22,7 +22,7 @@
 /T (sig2[0])
 >> 
 <<
-/V (Bonnie)
+/V (Bonnie Zhou)
 /T (Line1_FamilyName[0])
 >> 
 
@@ -120,7 +120,7 @@
 /T (telephone4[0])
 >> 
 <<
-/V (30298085)
+/V (3242)
 /T (ssn_s[0])
 >> 
 <<
@@ -189,7 +189,7 @@
 /T (print_name[0])
 >> 
 <<
-/V (Canada)
+/V (United States)
 /T (county_of_citizenship[0])
 >> 
 <<
