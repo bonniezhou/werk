@@ -1,0 +1,67 @@
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  text-size:36px;
+  line-height: 1.5;
+  font-weight: 200;
+}
+
+a {
+    color: #467dce;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0 auto;
+  text-size: 16px;
+  line-height: 1.333;
+}
+
+table {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+}
+
+a {
+  color: #467dce;
+}
+ 
+bg {
+  background-color:#1d315;
+}
+
+.werk-button {
+  border-color: #3863A4;
+  background-color: white;
+  color: #3863A4;
+  text-transform: uppercase;
+  border-radius: 0;
+  border: 2px solid;
+}
+
+.werk-button:hover {
+  background-color: #3863A4;
+  color: white;
+}
+
+form {
+  width: 400px;
+  margin: auto;
+}
+
+input[type=text], input[type=email], input[type=password] {
+  border-color: #3863A4;
+  width: 300px;
+  border-radius: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}

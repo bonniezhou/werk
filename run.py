@@ -45,5 +45,13 @@ def output():
          attachment_filename='output.pdf',
          as_attachment=True)
 
+@app.route("/ship")
+def ship():
+	return render_template('ship.html')
+
+@app.route("/css")
+def css():
+	return send_file('werk.css')
+
 if __name__ == "__main__":
     app.run()

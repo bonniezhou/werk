@@ -3,22 +3,28 @@
 <head>
 	<title>H4Werk</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+	<link href="/static/werk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confirm-submit">Apply Now</button>
+	<button type="button" class="btn btn-primary werk-button" data-toggle="modal" data-target="#confirm-submit">Let's do it!</button>
 
 	<div class="modal fade bd-example-modal-lg" id="confirm-submit" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-	  <div class="modal-dialog modal-lg">
-	    <div class="modal-content">
-	      Make sure you have the requirements to move forward: ...
-	    </div>
-	    <div class="modal-footer">
-            <a href="/signUp" id="submit" class="btn btn-success success">Continue</a>
-        </div>
-    </div>
-	  </div>
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+			  Make sure you have the requirements to move forward: ...
+			</div>
+			<div class="modal-footer">
+			    <a href="/signUp" id="submit" class="btn btn-primary werk-button">Continue</a>
+			</div>
+		</div>
 	</div>
 
+	<script type="text/javascript">
+	// $(document).ready(function(){
+	// 	$('body').fadeIn(2000);
+	// });
+	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
