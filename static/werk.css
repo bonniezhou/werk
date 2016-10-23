@@ -13,7 +13,7 @@ a {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif !important;
   margin: 0 auto;
   text-size: 16px;
   line-height: 1.333;
@@ -27,6 +27,7 @@ table {
 
 a {
   color: #467dce;
+  font-family: 'Lato', sans-serif !important;
 }
  
 bg {
@@ -47,14 +48,19 @@ bg {
   color: white;
 }
 
+.modal-content {
+  text-align: center;
+  height: 400px;
+}
+
 form {
-  width: 400px;
+  width: 420px;
   margin: auto;
 }
 
 input[type=text], input[type=email], input[type=password] {
   border-color: #3863A4;
-  width: 300px;
+  width: 100%;
   border-radius: 0;
 }
 
@@ -62,6 +68,58 @@ input[type=text], input[type=email], input[type=password] {
   text-align: center;
 }
 
-img {
+.headerDiv {
+  background-color: #3863A4;
   width: 100%;
+}
+
+.headerDiv img {
+  width: 1200px;
+  display: block;
+  margin: auto;
+}
+
+.btn-group label {
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
+.btn-group label.active {
+  border-color: #3863A4;
+}
+
+.container {
+  width:50%;
+  text-align: center;
+}
+ 
+.checklist {
+  margin-left: 0px auto;
+  margin-right: 0px auto;
+  margin-top: 30px;
+  text-align: left;
+}
+ 
+.checklistitem {
+  margin: 10px;
+}
+ 
+.bordered {
+  border: 1px solid #3863A4;
+}
+ 
+hr {
+  border-color: #b6c9ea;
+}
+ 
+ul {
+  margin: 0px auto;
+}
+
+.mailImg {
+  width: 400px;
+}
+
+.checklistitem a {
+  margin-left: 10px;
 }

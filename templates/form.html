@@ -3,13 +3,17 @@
 <head>
   <title>H4Werk | Your Info</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/static/werk.css">
 </head>
 <body>
-  <img src="/static/formHeader.png">
-  <h1>Your Info Please!</h1>
-  <p>We just need some basic information to help fill out your I-796 form.</p>
+  <div class="headerDiv"><img src="/static/formHeader.png"></div>
+  <div class="container">
+    <br><br><br>
+    <h1 text-align="center">Your Info Please!</h1>
+    <div text-align="center">We just need some basic information to help fill out your I-765 form.</div>
+    <br><br><br>
+  </div>
 
   <form action="/checklist" id="form" method="POST">
     <div class="form-group">
@@ -18,12 +22,12 @@
     </div>
     <div class="form-group">
       <label for="gender">Gender</label><br>
-      <label class="form-check-inline">
-        <input class="form-check-input" type="radio" name="gender" id="gender" value="female" checked="checked"> Female
-      </label>
-      <label class="form-check-inline">
-        <input class="form-check-input" type="radio" name="gender" id="gender" value="male"> Male
-      </label>
+      <div class="btn-group" id="status" data-toggle="buttons">
+        <label class="btn btn-default btn-on btn-xs active">
+        <input type="radio" value="1" name="multifeatured_module[module_id][status]" checked="checked">Female</label>
+        <label class="btn btn-default btn-off btn-xs ">
+        <input type="radio" value="0" name="multifeatured_module[module_id][status]">Male</label>
+      </div>
     </div>
     <div class="form-group">
       <label for="citizenship">Country of citizenship</label>
@@ -33,11 +37,16 @@
       <label for="ssn">Social Security Number</label>
       <input type="text" class="form-control" name="ssn" id="ssn">
     </div>
+    <br><br>
+
+    <div class="container">
+      <button type="submit" form="form" class="btn btn-primary werk-button" style="margin: auto">Next</button>
+    </div>
   </form>
-  <button type="submit" form="form" class="btn btn-primary werk-button">Next</button>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+
 </body>
 </html>
