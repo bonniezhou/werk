@@ -7,41 +7,54 @@
 	<link href="/static/werk.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<button type="button" class="btn btn-primary werk-button" data-toggle="modal" data-target="#confirm-submit">Let's do it!</button>
+	<div class="headerDiv" style="background-color:#fff;">
+	<img src="/static/landingHeader.png">
+	</div>
+	<div class="row" style="margin:0px auto;padding-bottom:0px;">
+	<img src="/static/landingImg.png" style="padding-top:50px;display:div;margin-top:150px; width:800px; margin: 0px auto;"></img>
+	<div>
+
+	<div class="container" style="margin-top:-40px; margin-bottom: 240px;">
+	    <h1 text-align="center" >Feeling stuck at home?</h1>
+	    <h1 text-align="center" style="margin-bottom:24px;">H-4 Visa holders can now work in the U.S.!</h1>
+	    <p text-align="center" style="margin-bottom:80px;">Finish applying for an EAD in 10 minutes with us.</p>
+	    
+	<button type="button" class="btn btn-primary werk-button" data-toggle="modal" data-target="#confirm-submit">Let's do it</button>
+	</div>
+
+	<div class="headerDiv" style="background-color:#fff"> 
+	<img src="/static/landingPage.png" style="width:1200px; margin: 0px auto; margin-bottom:50px;"></img>
+	</div>
 
 	<div class="modal fade bd-example-modal-lg" id="confirm-submit" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
-			  <br><br><br>
-			  <h1>Great! Let's make sure you qualify.</h1>
-			  <h1>Do you have your:</h1>
-			  <br>
-			<div class="container">
-			  <div class="col-md-12">
-			      <div class="checklist bordered">
-			      	  <div class="checklistitem">
-			          <input type="checkbox" value="">   <a href="#" title="Click to download and print your filled-out application">Spouse's I-140 or AC-21 form</a>
-			            <hr>
-			          </div>
-			          <div class="checklistitem">
-			          <input type="checkbox" value="">   <a href="#" title="You get this form when you enter the country">Spouses's I-129 receipt</a>
-			          </div>
-			      </div>
-		      </div>
-		    </div>
-			  <br><br><br>
-			</div>
-			<div class="modal-footer">
+				<br><br><br>
+				<h1>Great! Let's make sure you qualify.</h1>
+				<h1>Do you have your:</h1>
+				<br>
+				<br>
+				<div>
+					<div class="bullet">
+						<img src="/static/bullet1.png">
+						<p>Is your spouse eligible to apply for a green card?</p>
+					</div>
+					<div class="bullet">
+						<img src="/static/bullet2.png">
+						<p>Has your spouse extended his/her&nbsp;H1B?</p>
+					</div>
+				</div>
+			  	<br>			  
+			    <a href="#" id="submit" style="margin-right:24px">Wait, what?</a>
 			    <a href="/signUp" id="submit" class="btn btn-primary werk-button">Yep!</a>
-			    <a href="/signUp" id="submit" class="btn btn-primary werk-button">What, what?</a>
 			</div>
 		</div>
 	</div>
 
 	<script type="text/javascript">
-	// $(document).ready(function(){
-	// 	$('body').fadeIn(2000);
-	// });
+	$(document).ready(function(){
+		$('body').fadeIn(2000);
+	});
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>

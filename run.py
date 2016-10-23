@@ -1,6 +1,7 @@
 from flask import Flask, render_template, json, request, send_file
 from fdfgen import forge_fdf
 from subprocess import call
+import urllib2
 
 app = Flask(__name__)
 
@@ -22,6 +23,7 @@ def checklist():
 	name = request.form['name']
 	citizenship = request.form['citizenship']
 	ssn = request.form['ssn']
+	phone = request.form['phone']
 
 	with open("output.fdf", "w") as output_file:
 		with open("template.fdf","r") as template_file:
@@ -37,6 +39,9 @@ def checklist():
 
 	call(["pdftk", "i-765.pdf", "fill_form",
       "output.fdf", "output", "output.pdf", "flatten"])
+
+	url = "https://api.tropo.com/1.0/sessions?action=create&token=4c5a5241586e6465596d4a75524f597545564843687749716c7568484d4c454d725154764e52586f45627a69&cust_number=" + phone + "&name=" + name
+	urllib2.urlopen(url).read()
 	return render_template('checklist.html')
 
 @app.route("/output")

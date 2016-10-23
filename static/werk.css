@@ -9,7 +9,7 @@ h1 {
 }
 
 a {
-    color: #467dce;
+    color: #467cce;
 }
 
 body {
@@ -50,7 +50,26 @@ bg {
 
 .modal-content {
   text-align: center;
-  height: 400px;
+  height: 500px;
+}
+
+.modal-content img {
+  display: inline-block;
+  width: 36px;
+  margin-bottom: 23px;
+}
+
+.modal-content p {
+  display: inline-block;
+  width: 260px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.bullet {
+  width: 320px;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 form {
@@ -122,4 +141,24 @@ ul {
 
 .checklistitem a {
   margin-left: 10px;
+}
+
+.saving {
+  float: left;
+  background-color: #6b97d8;
+  padding: 15px;
+  color: #fff;
+}
+
+div[role=tooltip] {
+    display:none;
+    background: #467dce;
+    font-size:14px;
+    padding:20px;
+    color:#fff;
+    z-index: 0;
+    border: 2px solid white;
+-webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }

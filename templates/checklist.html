@@ -15,27 +15,27 @@
 	    <div text-align="center">Forms, forms, more forms</div>
 	    <div class="col-md-12">
 	      <div class="checklist bordered">
-	      	  <div class="checklistitem">
+	      	  <div id="item0" class="checklistitem">
 	          <input type="checkbox" value="">   <a href="/output" title="Click to download and print your filled-out application">Print and sign I-765 form</a>
 	            <hr>
 	          </div>
-	          <div class="checklistitem">
+	          <div id="item1" class="checklistitem">
 	          <input type="checkbox" value="">   <a href="#" title="You get this form when you enter the country" style="color:#373a3c">I-94 Form</a>
 	          <hr>
 	          </div>
-	          <div class="checklistitem">
+	          <div id="item2" class="checklistitem">
 	          <input type="checkbox" value="">   <a href="#" title="You get this form when your spouse is eligible to apply for a green card." style="color:#373a3c"> Your spouse's I-40 Form  </a> OR <a href="#" title="You get this form when you apply for an Extension for H1B stay (6+)" style="color:#373a3c; margin-left:0">  AC-21 Form</a>
 	          <hr>
 	          </div>
-	          <div class="checklistitem">
+	          <div id="item3" class="checklistitem">
 	          <input type="checkbox" value="">   <a href="#" title="You get this form when either the I-40 form or the AC-21 form is approved" style="color:#373a3c">Your spouse's I-129 Receipt</a>
 	          <hr>
 	          </div>
-	          <div class="checklistitem">
+	          <div id="item4" class="checklistitem">
 	          <input type="checkbox" value="">   <a href="#" title="These photos need to be printed on photographic paper. You should not wear things that obscure your face, such as glasses or hats." style="color:#373a3c">Two (2) Passport Photos</a>
 	          <hr>
 	          </div>
-	          <div class="checklistitem">
+	          <div id="item5" class="checklistitem">
 	          <input type="checkbox" value="">   <a href="#" title="Your photo or scan of the passport should include your H4 Visa stamp and the page containing your name." style="color:#373a3c">Scan of Passport</a>
 	          </div>
 	      </div>
@@ -63,8 +63,21 @@
 	    });
 
       $( function() {
-        $( document ).tooltip();
-      } );
+		    $( document ).tooltip(
+				{position: { my: "left+15 center", at: "right center" }}
+			);
+		});
+
+      $('input').each(function(index, element) {
+		  $(this).change(function() {
+		    console.log("hey" + index);
+		    if ($(this).is(":checked")) {
+		      $("#item"+index).fadeTo(300, .35);
+		    } else {
+		      $("#item"+index).fadeTo(300, 1);
+		    }
+		  });
+		});
   </script>
   <style>
   label {
